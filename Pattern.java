@@ -26,7 +26,6 @@ public class Pattern {
                 System.out.print("* ");
             }
             System.out.println();
-        }
-        
+        } 
     }
 }
