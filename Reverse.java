@@ -8,8 +8,18 @@ public class Reverse {
         sc.nextLine();
 
         System.out.println("word: ");
-        String word = sc.nextLine();
-
+        String origin_word = sc.nextLine();
+        String [] new_word = origin_word.split(" ");
         
+        for (String word : new_word) {
+            String reverse = "";
+            for (int i = word.length() - 1; i >= 0; i--) {
+                reverse += Character.toLowerCase(word.charAt(i));
+            }
+            if (reverse.length() > 0) {
+                reverse = Character.toUpperCase(reverse.charAt(0)) + reverse.substring(1);
+            }
+            System.out.print(reverse + " ");
+        }
     }
 }
